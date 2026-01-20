@@ -1,0 +1,56 @@
+/* Center everything on the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+}
+
+/* Center the table and make it look clean */
+table {
+  width: 60%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Table header (if you have one) */
+th {
+  background-color: #d9ffff; /* very light teal */
+  padding: 10px;
+}
+
+/* Alternating row colors */
+tr:nth-child(odd)  { background-color: #C6F1EE; }
+tr:nth-child(even) { background-color: #CFF7E8; }
+
+
+/* Table cell styling */
+td {
+  padding: 10px;
+  border: 1px solid #cccccc55;
+}
+
+/* Highlight project labs */
+.project, 
+tr[style*="background-color: yellow"] {
+  background-color: rgba(255, 255, 0, 0.5) !important;
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  width: 80%;
+  background-color: #4a4a4a; /* strong contrast */
+  margin: 30px auto;
+  border-radius: 2px;
+}
+
+#lab10, #lab18, #lab19 {
+    text-align: center;  /* centers the text horizontally */
+}

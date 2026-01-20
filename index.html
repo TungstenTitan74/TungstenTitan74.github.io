@@ -1,10 +1,179 @@
-<!doctype html>
-    <html>
-        <head>
-            <title>My Free Website</title>
-        </head>
-        <body>
-            <h1>Welcome to My Website</h1>
-            <p>This site is hosted for free!</p>
-        </body>
-    </html>
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>DIFD Master Page</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style/index.css">
+    
+    <h1>Master Page for DIFD 141</h1>
+    <hr>
+    <br>
+
+    <label for="checkdown">Choose what to view:</label>
+    <select id="labSelector" onchange="handleSelection()">
+      <option value="all">Show All Labs</option>
+      <option value="1-10">Labs 1-10</option>
+      <option value="11-20">Labs 11-20</option>
+      <option value="21-28">Labs 21-28</option>
+      <option value="projects">Projects Only</option>
+    </select>
+
+
+    <br>
+    <br>
+
+    <table>
+      <thead>
+        <th>Lab Name</th>
+        <th>Link</th>
+      </thead>
+      <tbody>
+        <tr id="lab1">
+          <td id="lab1">Lab 1: Setup</td>
+          <td id="link1"><a href="https://www.birdnest.org/gordont11/difd_141/lab_01/template.html">Lab 1</a></td>
+        </tr>
+        
+        <tr id="lab2">
+          <td id="lab2">Lab 2: Introductions</td>
+          <td id="link2"><a href="https://www.birdnest.org/gordont11/difd_141/lab_02/introduction.html">Lab 2</a></td>
+        </tr>
+
+        <tr id="lab3">
+          <td>Lab 3: Links Lists Imgs</td>
+          <td><a href="https://www.birdnest.org/gordont11/difd_141/lab_03/page_01.html">Lab 3</a></td>
+        </tr>
+
+        <tr id="lab4">
+          <td id="lab4">Lab 4: Tables Images Markup</td>
+          <td id="link4"><a href="https://www.birdnest.org/gordont11/difd_141/lab_04/pictures.html">Lab 4</a></td>
+        </tr>
+
+        <tr id="lab5">
+          <td id="lab5">Lab 5: Multimedia & Forms</td>
+          <td id="link5"><a href="https://www.birdnest.org/gordont11/difd_141/lab_05/birds.html">Lab 5</a></td>
+        </tr>
+
+        <tr id="lab6">
+          <td id="lab6">Lab 6: Form data sent to a server</td>
+          <td id="link6"><a href="https://www.birdnest.org/gordont11/difd_141/lab_06/pizza.html">Lab 6</a></td>
+        </tr>
+
+        <tr id="project1">
+          <td id="project1">Project 1: Web Dev Research Project</td>
+          <td id="linkp1"><a href="https://www.birdnest.org/gordont11/difd_141/lab_07/page_01.html">Project 1</a></td>
+        </tr>
+
+        <tr id="lab8">
+          <td id="lab8">Lab 8: CSS Basics</td>
+          <td id="link8"><a href="https://www.birdnest.org/gordont11/difd_141/lab_08/page_01.html">Lab 8</a></td>
+        </tr>
+
+        <tr id="lab9">
+          <td id="lab9">Lab 9: Color, text, review practice</td>
+          <td id="link9"><a href="https://www.birdnest.org/gordont11/difd_141/lab_09/page_01.html">Lab 9</a></td>
+        </tr>
+
+        <tr id="lab10">
+          <td id="lab10" colspan="2">No Lab 10: Exam #1</td>
+        </tr>
+
+        <tr id="lab11">
+          <td id="lab11">Lab 11: Div, span, text, links</td>
+          <td id="link11"><a href="https://www.birdnest.org/gordont11/difd_141/lab_11/page_01.html">Lab 11</a></td>
+        </tr>
+
+        <tr id="project2">
+          <td id="project2">Project 2: Non-Profit, Business, Club, Team, or Organization Website</td>
+          <td id="linkp2"><a href="https://www.birdnest.org/gordont11/difd_141/lab_12/page_01.html">Project 2</a></td>
+        </tr>
+
+        <tr id="lab13">
+          <td id="lab13">Lab 13: boxes, center, align, overflow</td>
+          <td id="link13"><a href="https://www.birdnest.org/gordont11/difd_141/lab_13/01_border_width.html">Lab 13</a></td>
+        </tr>
+
+        <tr id="project3">
+          <td id="project3">Project 3: Continuation of Non-Profit, Business, Club, Team, or Organization Website</td>
+          <td id="linkp3"><a href="https://www.birdnest.org/gordont11/difd_141/lab_14/page_01.html">Project 3</a></td>
+        </tr>
+
+        <tr id="lab15">
+          <td id="lab15">Lab 15: Layout / position</td>
+          <td id="link15"><a href="https://www.birdnest.org/gordont11/difd_141/lab_15/01_position-relative.html">Lab 15</a></td>
+        </tr>
+
+        <tr id="lab16">
+          <td id="lab16">Lab 16: Floats</td>
+          <td id="link16"><a href="https://www.birdnest.org/gordont11/difd_141/lab_16/01_float.html">Lab 16</a></td>
+        </tr>
+
+        <tr id="lab17">
+          <td id="lab17">Lab 17: Background images</td>
+          <td id="link17"><a href="https://www.birdnest.org/gordont11/difd_141/lab_17/a_image_center.html">Lab 17</a></td>
+        </tr>
+
+        <tr id="lab18">
+          <td id="lab18" colspan="2">No Lab 18 due to bad wifi during class</td>
+        </tr>
+
+        <tr id="lab19">
+          <td id="lab19" colspan="2">No Lab 19: Exam #2</td>
+        </tr>
+
+        <tr id="lab20">
+          <td id="lab20">Lab 20: Js intro: js menu</td>
+          <td id="link20"><a href="https://www.birdnest.org/gordont11/difd_141/lab_20/dc_main.html">Lab 20</a></td>
+        </tr>
+
+        <tr id="lab21">
+          <td id="lab21">Lab 21: comments, variables, assigments</td>
+          <td id="link21"><a href="https://www.birdnest.org/gordont11/difd_141/lab_21/var_assgn_cmmt.html">Lab 21</a></td>
+        </tr>
+
+        <tr id="lab22">
+          <td id="lab22">Lab 22: Operators, Comparisons, if else</td>
+          <td id="link22"><a href="https://www.birdnest.org/gordont11/difd_141/lab_22/01_operators.html">Lab 22</a></td>
+        </tr>
+
+        <tr id="lab23">
+          <td id="lab23">Lab 23: Functions</td>
+          <td id="link23"><a href="https://www.birdnest.org/gordont11/difd_141/lab_23/01_add.html">Lab 23</a></td>
+        </tr>
+
+        <tr id="lab24">
+          <td id="lab24">Lab 24: Functions, logical operators, events</td>
+          <td id="link24"><a href="https://www.birdnest.org/gordont11/difd_141/lab_24/01_scope.html">Lab 24</a></td>
+        </tr>
+
+        <tr id="lab25">
+          <td id="lab25">Lab 25: Functions and forms</td>
+          <td id="link25"><a href="https://www.birdnest.org/gordont11/difd_141/lab_25/01_form.html">Lab 25</a></td>
+        </tr>
+
+        <tr id="lab26">
+          <td id="lab26">Lab 26: Arrays and Functions</td>
+          <td id="link26"><a href="https://www.birdnest.org/gordont11/difd_141/lab_26/01_Arrays_and_functions.html">Lab 26</a></td>
+        </tr>
+
+        <tr id="project4">
+          <td id="project4">Project 4: Smart Home Javascript</td>
+          <td id="link04"><a href="https://www.birdnest.org/gordont11/difd_141/project_4/smart_home/index.html">Project 4</a></td>
+        </tr>
+        
+        <tr id="lab27">
+          <td id="lab27">Lab 27: Loops, functions, arrays</td>
+          <td id="link27"><a href="https://www.birdnest.org/gordont11/difd_141/lab_27/01_basic_loops.html">Lab 27</a></td>
+        </tr>
+
+        <tr id="lab28">
+          <td id="lab28">Lab 28: For of loop</td>
+          <td id="link28"><a href="https://www.birdnest.org/gordont11/difd_141/lab_28/">Lab 28</a></td>
+        </tr>
+
+      </tbody>
+    </table>
+    <script src='scripts/index.js'></script>
+</body>
+</html>
